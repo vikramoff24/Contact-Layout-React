@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
+import Details from "./Details";
 function Card(props) {
   return (
     <div className="card" class="card">
@@ -8,8 +9,7 @@ function Card(props) {
         <Avatar image={props.image} />
       </div>
       <div className="bottom" class="bottom">
-        <p class="info">{props.number}</p>
-        <p class="info">{props.email}</p>
+        <Details email={props.email} number={props.number} />
       </div>
     </div>
   );
